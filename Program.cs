@@ -1,12 +1,13 @@
-﻿double[] V = { 3, 4, 5, 6, 7 };
+﻿int[] A = { 1, 2, 3, 4, 5 };
+int[] B = { 5, 4, 3, 2, 1 };
 
-double suma = 0;
+int productoEscalar = 0;
 
-for (int i = 0; i < V.Length; i++)
+for (int i = 0; i < A.Length; i++)
 {
-    suma += V[i] * V[i];
+    productoEscalar += A[i] * B[i];
 }
 
-double magnitud = Math.Sqrt(suma);
+Console.WriteLine("El producto escalar es: " + productoEscalar);
 
-Console.WriteLine("La magnitud del vector es: " + magnitud);
+
