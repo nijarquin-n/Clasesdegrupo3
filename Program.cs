@@ -1,13 +1,15 @@
-﻿int[] A = { 1, 2, 3, 4, 5 };
-int[] B = { 5, 4, 3, 2, 1 };
+﻿int[] A = { 15, 18, 20, 25, 30 };
+int[] B = { 5, 8, 10, 12, 15 };
+int[] R = new int[5];
 
-int productoEscalar = 0;
-
-for (int i = 0; i < A.Length; i++)
+for (int i = 0; i < 5; i++)
 {
-    productoEscalar += A[i] * B[i];
+    R[i] = A[i] - B[i];
 }
 
-Console.WriteLine("El producto escalar es: " + productoEscalar);
+Console.WriteLine("Vector resultante:");
 
-
+for (int i = 0; i < 5; i++)
+{
+    Console.Write(R[i] + " ");
+}
